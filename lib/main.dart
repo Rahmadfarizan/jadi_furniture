@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:jadi_furniture/constants.dart';
 import 'package:jadi_furniture/screens/home/home_screen.dart';
 
-// min 7.27
+// min 18.18
 void main() {
   runApp(const MyApp());
 }
