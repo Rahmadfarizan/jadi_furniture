@@ -21,6 +21,7 @@ class ButtonBuyAndDescription extends StatelessWidget {
             child: InkWell(
               onTap: () {},
               child: Container(
+                alignment: Alignment.center,
                 decoration: const BoxDecoration(
                   color: kPrimaryColor,
                   borderRadius: BorderRadius.only(
@@ -33,6 +34,7 @@ class ButtonBuyAndDescription extends StatelessWidget {
                     color: Colors.white,
                     fontSize: 16,
                   ),
+                  textAlign: TextAlign.center,
                 ),
               ),
             ),
@@ -40,7 +42,10 @@ class ButtonBuyAndDescription extends StatelessWidget {
           Expanded(
               child: InkWell(
             onTap: () {},
-            child: const Text("Description"),
+            child: const Text(
+              "Description",
+              textAlign: TextAlign.center,
+            ),
           ))
         ],
       ),
