@@ -12,7 +12,8 @@ class ButtonBuyAndDescription extends StatelessWidget {
     Size size = MediaQuery.of(context).size;
     return Padding(
       padding: const EdgeInsets.only(
-          top: kDefaultPadding, bottom: kDefaultPadding * 2),
+        top: kDefaultPadding,
+      ),
       child: Row(
         children: [
           SizedBox(
