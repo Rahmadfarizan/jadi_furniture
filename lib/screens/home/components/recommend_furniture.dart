@@ -1,5 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:jadi_furniture/screens/details/details_screen.dart';
 
 import '../../../constants.dart';
 
@@ -23,23 +23,37 @@ class RecommendsFurniture extends StatelessWidget {
             country: 'Russia',
             image: "assets/images/image_1.png",
             price: 440,
-            press: () {},
+            press: () => Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => const DetailScreen(),
+              ),
+            ),
           ),
           RecomendFurnitureCard(
-            size: size,
-            title: 'Samantha',
-            country: 'Russia',
-            image: "assets/images/image_2.png",
-            price: 440,
-            press: () {},
-          ),
+              size: size,
+              title: 'Samantha',
+              country: 'Russia',
+              image: "assets/images/image_2.png",
+              price: 440,
+              press: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const DetailScreen(),
+                    ),
+                  )),
           RecomendFurnitureCard(
             size: size,
             title: 'Samantha',
             country: 'Russia',
             image: "assets/images/image_3.png",
             price: 440,
-            press: () {},
+            press: () => Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => const DetailScreen(),
+              ),
+            ),
           ),
           RecomendFurnitureCard(
             size: size,
@@ -47,7 +61,12 @@ class RecommendsFurniture extends StatelessWidget {
             country: 'Russia',
             image: "assets/images/image_1.png",
             price: 440,
-            press: () {},
+            press: () => Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => const DetailScreen(),
+              ),
+            ),
           ),
         ],
       ),
@@ -84,7 +103,12 @@ class RecomendFurnitureCard extends StatelessWidget {
         children: [
           Image.asset(image),
           InkWell(
-            onTap: () => press,
+            onTap: () => Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => const DetailScreen(),
+              ),
+            ),
             child: Container(
                 padding: const EdgeInsets.all(kDefaultPadding / 2),
                 decoration: BoxDecoration(

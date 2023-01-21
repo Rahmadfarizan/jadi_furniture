@@ -4,6 +4,8 @@ import 'package:jadi_furniture/constants.dart';
 
 import 'package:jadi_furniture/screens/home/components/body.dart';
 
+import '../../components/mybottom_navbar.dart';
+
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
@@ -12,6 +14,7 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: buildAppBar(),
       body: const Body(),
+      bottomNavigationBar: const MyBottomNavbar(),
     );
   }
 
